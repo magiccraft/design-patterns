@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "/Users/kullanici/Desktop/yazılım/design patterns/singleton/singleton.csproj": {}
+    "/Users/kullanici/Desktop/yazılım/design patterns/Singleton/singleton.csproj": {}
   },
   "projects": {
-    "/Users/kullanici/Desktop/yazılım/design patterns/singleton/singleton.csproj": {
+    "/Users/kullanici/Desktop/yazılım/design patterns/Singleton/singleton.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/kullanici/Desktop/yazılım/design patterns/singleton/singleton.csproj",
+        "projectUniqueName": "/Users/kullanici/Desktop/yazılım/design patterns/Singleton/singleton.csproj",
         "projectName": "singleton",
-        "projectPath": "/Users/kullanici/Desktop/yazılım/design patterns/singleton/singleton.csproj",
+        "projectPath": "/Users/kullanici/Desktop/yazılım/design patterns/Singleton/singleton.csproj",
         "packagesPath": "/Users/kullanici/.nuget/packages/",
-        "outputPath": "/Users/kullanici/Desktop/yazılım/design patterns/singleton/obj/",
+        "outputPath": "/Users/kullanici/Desktop/yazılım/design patterns/Singleton/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/Users/kullanici/.nuget/NuGet/NuGet.Config"

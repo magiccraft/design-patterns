@@ -10,3 +10,4 @@
 /Users/kullanici/Desktop/yazılım/design patterns/singleton/obj/Debug/net9.0/singleton.pdb
 /Users/kullanici/Desktop/yazılım/design patterns/singleton/obj/Debug/net9.0/singleton.genruntimeconfig.cache
 /Users/kullanici/Desktop/yazılım/design patterns/singleton/obj/Debug/net9.0/ref/singleton.dll
+/Users/kullanici/Desktop/yazılım/design patterns/Singleton/obj/Debug/net9.0/singleton.sourcelink.json

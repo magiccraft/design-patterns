@@ -2,11 +2,11 @@ public sealed class SettingsManager
 {
     private static readonly Lazy<SettingsManager> _instance = new Lazy<SettingsManager>(() => new SettingsManager());
 
-    public string Theme { get; set; }
-    public string Language { get; set; }
+    public string? Theme { get; set; }
+    public string? Language { get; set; }
     public int FontSize { get; set; }
 
-    public SettingsManager()
+    private SettingsManager()
     {
         System.Console.WriteLine("Ayarlar yüklendi.");
     }

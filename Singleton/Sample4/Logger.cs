@@ -1,8 +1,8 @@
 public sealed class Logger
 {
-    private static readonly Lazy<Logger> _instance = new Lazy<Logger>(() => new Logger());
+    private static readonly Lazy<Logger> _instance = new(() => new Logger());
 
-    public Logger()
+    private Logger()
     {
         System.Console.WriteLine("Logger oluşturuldu.");
     }

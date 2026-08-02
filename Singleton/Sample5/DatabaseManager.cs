@@ -3,10 +3,10 @@ using Microsoft.VisualBasic;
 
 public sealed class DatabaseManager
 {
-    private static readonly new Lazy<DatabaseManager> _instance =
+    private static readonly Lazy<DatabaseManager> _instance =
              new Lazy<DatabaseManager>(() => new DatabaseManager());
 
-    public DatabaseManager()
+    private DatabaseManager()
     {
         System.Console.WriteLine("Database manager oluşturuldu");
     }

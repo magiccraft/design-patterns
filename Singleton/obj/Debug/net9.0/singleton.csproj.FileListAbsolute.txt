@@ -1,0 +1,12 @@
+/Users/kullanici/Desktop/yazılım/design patterns/singleton/bin/Debug/net9.0/singleton
+/Users/kullanici/Desktop/yazılım/design patterns/singleton/bin/Debug/net9.0/singleton.deps.json
+/Users/kullanici/Desktop/yazılım/design patterns/singleton/bin/Debug/net9.0/singleton.runtimeconfig.json
+/Users/kullanici/Desktop/yazılım/design patterns/singleton/bin/Debug/net9.0/singleton.dll
+/Users/kullanici/Desktop/yazılım/design patterns/singleton/bin/Debug/net9.0/singleton.pdb
+/Users/kullanici/Desktop/yazılım/design patterns/singleton/obj/Debug/net9.0/singleton.GeneratedMSBuildEditorConfig.editorconfig
+/Users/kullanici/Desktop/yazılım/design patterns/singleton/obj/Debug/net9.0/singleton.csproj.CoreCompileInputs.cache
+/Users/kullanici/Desktop/yazılım/design patterns/singleton/obj/Debug/net9.0/singleton.dll
+/Users/kullanici/Desktop/yazılım/design patterns/singleton/obj/Debug/net9.0/refint/singleton.dll
+/Users/kullanici/Desktop/yazılım/design patterns/singleton/obj/Debug/net9.0/singleton.pdb
+/Users/kullanici/Desktop/yazılım/design patterns/singleton/obj/Debug/net9.0/singleton.genruntimeconfig.cache
+/Users/kullanici/Desktop/yazılım/design patterns/singleton/obj/Debug/net9.0/ref/singleton.dll

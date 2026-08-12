@@ -7,7 +7,4 @@ public sealed  class ConfigurationManager
     {
         System.Console.WriteLine("Configuration manager created");
     }    
-    
-    
-
 }

@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "/Users/kullanici/Desktop/yazılım/design patterns/builder/builder.csproj": {}
+    "/Users/kullanici/Desktop/yazılım/design patterns/Builder/builder.csproj": {}
   },
   "projects": {
-    "/Users/kullanici/Desktop/yazılım/design patterns/builder/builder.csproj": {
+    "/Users/kullanici/Desktop/yazılım/design patterns/Builder/builder.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/kullanici/Desktop/yazılım/design patterns/builder/builder.csproj",
+        "projectUniqueName": "/Users/kullanici/Desktop/yazılım/design patterns/Builder/builder.csproj",
         "projectName": "builder",
-        "projectPath": "/Users/kullanici/Desktop/yazılım/design patterns/builder/builder.csproj",
+        "projectPath": "/Users/kullanici/Desktop/yazılım/design patterns/Builder/builder.csproj",
         "packagesPath": "/Users/kullanici/.nuget/packages/",
-        "outputPath": "/Users/kullanici/Desktop/yazılım/design patterns/builder/obj/",
+        "outputPath": "/Users/kullanici/Desktop/yazılım/design patterns/Builder/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/Users/kullanici/.nuget/NuGet/NuGet.Config"

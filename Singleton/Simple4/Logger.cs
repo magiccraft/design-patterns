@@ -9,7 +9,7 @@ public sealed class Logger
 
     public static Logger  Instance => _instance.Value;
 
-    public void Log(string message)
+    public   void Log(string message)
     {
         System.Console.WriteLine($"Loglama yapıldı: {message}");
     }

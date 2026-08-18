@@ -1,67 +1,53 @@
-# Design Patterns in C# (.NET 9)
+Design Patterns (.NET 9)
+Bu repo, C# ve .NET 9 kullanarak GoF (Gang of Four) tasarım desenlerini öğrenirken yazdığım kodları ve aldığım notları içeriyor.
 
-Bu depo, tüm 23 **Gang of Four (GoF)** tasarım deseninin C# (.NET 9) ile hazırlanmış, derlenebilir ve çalıştırılabilir örneklerini içermektedir.
+Her desen için bağımsız, derlenebilir ve çalıştırılabilir birer konsol projesi hazırladım.
 
-Tüm desenler 3 ana kategori altında toplanmış ve her biri için bağımsız bir konsol projesi (`.csproj`, `Program.cs` ve `Sample1/` klasörü) hazırlanmıştır.
+1. Yaratımsal Desenler (Creational)
+Singleton (Creational/Singleton): Sınıftan tek bir örnek alınmasını garanti eder (Lazy<T> kullanımı).
 
----
+Factory Method (Creational/FactoryMethod): Nesne üretim işini alt sınıflara bırakır (Bildirim sistemi örneği).
 
-## 🏗️ 1. Creational Patterns (Yaratımsal Desenler)
-Nesne oluşturma mekanizmalarını soyutlayarak, nesnelerin nasıl oluşturulduğundan, birleştirildiğinden ve temsil edildiğinden bağımsız sistemler kurmayı sağlar.
+Abstract Factory (Creational/AbstractFactory): İlişkili nesne ailelerini üretir (UI bileşenleri örneği).
 
-| Tasarım Deseni | Klasör | Açıklama / Senaryo |
-| :--- | :--- | :--- |
-| **Singleton** | [`Creational/Singleton`](Creational/Singleton) | Bir sınıfın yalnızca tek bir örneğinin olmasını (`Lazy<T>`) ve buna global erişim sağlanmasını garanti eder (Veritabanı Yöneticisi). |
-| **Factory Method** | [`Creational/FactoryMethod`](Creational/FactoryMethod) | Nesne oluşturma arayüzü tanımlar ancak hangi somut sınıfın örnekleneceğine alt sınıfların karar vermesini sağlar (Bildirim Sistemi). |
-| **Abstract Factory** | [`Creational/AbstractFactory`](Creational/AbstractFactory) | Birbirleriyle ilişkili veya bağımlı nesne ailelerini somut sınıflarını belirtmeden üretir (Çapraz Platform UI Bileşenleri). |
-| **Builder** | [`Creational/Builder`](Creational/Builder) | Karmaşık bir nesnenin adım adım (Fluent API / Director) oluşturulmasını sağlar (Özelleştirilebilir Bilgisayar Konfigürasyonu). |
-| **Prototype** | [`Creational/Prototype`](Creational/Prototype) | Mevcut nesneleri kopyalayarak (Shallow ve Deep Copy) yeni nesneler üretmeyi sağlar (Belge Klonlama). |
+Builder (Creational/Builder): Karmaşık nesneleri adım adım inşa eder (Bilgisayar toplama örneği).
 
----
+Prototype (Creational/Prototype): Nesneleri klonlayarak çoğaltır (Shallow & Deep copy).
 
-## 🧩 2. Structural Patterns (Yapısal Desenler)
-Nesnelerin ve sınıfların daha büyük yapılar oluşturmak üzere nasıl bir araya getirileceğini ve esnek kalacağını düzenler.
+2. Yapısal Desenler (Structural)
+Adapter (Structural/Adapter): Farklı arayüzleri birbiriyle uyumlu hale getirir (Ödeme entegrasyonu örneği).
 
-| Tasarım Deseni | Klasör | Açıklama / Senaryo |
-| :--- | :--- | :--- |
-| **Adapter** | [`Structural/Adapter`](Structural/Adapter) | Uyumsuz arayüzlere sahip iki sınıfın birlikte çalışmasını sağlar (3. Parti PayPal Ödeme Entegrasyonu). |
-| **Bridge** | [`Structural/Bridge`](Structural/Bridge) | Bir soyutlamayı (Abstraction) uygulamasından (Implementation) ayırarak ikisinin de bağımsız olarak geliştirilmesini sağlar (Kumanda & Cihazlar). |
-| **Composite** | [`Structural/Composite`](Structural/Composite) | Nesneleri ağaç hiyerarşisi şeklinde düzenleyerek tekil ve bileşik nesnelere aynı şekilde davranılmasını sağlar (Dosya & Klasör Sistemi). |
-| **Decorator** | [`Structural/Decorator`](Structural/Decorator) | Nesnelere dinamik olarak yeni davranış ve sorumluluklar ekler (Kahve Sipariş ve Ek Malzeme Sistemi). |
-| **Facade** | [`Structural/Facade`](Structural/Facade) | Karmaşık bir kütüphane veya alt sistem kümesine basitleştirilmiş bir ön arayüz sunar (E-Ticaret Sipariş Yönetimi). |
-| **Flyweight** | [`Structural/Flyweight`](Structural/Flyweight) | Ortak durumu (Intrinsic State) paylaşarak çok sayıda benzer nesnenin bellek tüketimini en aza indirir (Orman Ağaç Çizim Motoru). |
-| **Proxy** | [`Structural/Proxy`](Structural/Proxy) | Başka bir nesneye erişimi kontrol etmek ve yönetmek için bir vekil nesne sunar (Virtual / Lazy Loading Resim Yükleyici). |
+Bridge (Structural/Bridge): Soyutlama ile uygulamayı birbirinden ayırır (Cihaz ve kumanda örneği).
 
----
+Composite (Structural/Composite): Ağaç hiyerarşisindeki nesneleri tek bir arayüzle yönetir (Dosya/klasör yapısı).
 
-## 🔄 3. Behavioral Patterns (Davranışsal Desenler)
-Nesneler arasındaki etkileşim, iletişim, algoritma akışı ve sorumluluk dağılımını optimize eder.
+Decorator (Structural/Decorator): Nesneye dinamik olarak yeni özellikler ekler (Kahve sipariş örneği).
 
-| Tasarım Deseni | Klasör | Açıklama / Senaryo |
-| :--- | :--- | :--- |
-| **Chain of Responsibility** | [`Behavioral/ChainOfResponsibility`](Behavioral/ChainOfResponsibility) | Bir isteği işleyebilecek nesneler zinciri boyunca ileterek uygun nesnenin isteği karşılamasını sağlar (Masraf Onay Hiyerarşisi). |
-| **Command** | [`Behavioral/Command`](Behavioral/Command) | Bir isteği bir nesneye dönüştürerek parametreleştirmeyi, sıraya almayı ve geri almayı (Undo) destekler (Akıllı Ev Kumandası). |
-| **Interpreter** | [`Behavioral/Interpreter`](Behavioral/Interpreter) | Bir dilin dilbilgisini ve ifadelerini yorumlamak için sözdizimi ağacı tanımlar (Matematiksel İfade Yorumlayıcı). |
-| **Iterator** | [`Behavioral/Iterator`](Behavioral/Iterator) | Bir koleksiyonun iç yapısını ifşa etmeden elemanlarına sırayla erişim sağlar (Kitap Koleksiyonu Gezgini). |
-| **Mediator** | [`Behavioral/Mediator`](Behavioral/Mediator) | Nesnelerin birbiriyle doğrudan iletişim kurmasını engelleyerek bağımlılıkları azaltan bir arabulucu sunar (Sohbet Odası). |
-| **Memento** | [`Behavioral/Memento`](Behavioral/Memento) | Bir nesnenin iç durumunu kapsüllemeyi bozmadan saklayıp daha sonra geri yüklemeyi sağlar (Metin Editörü Geri Al/Yinele). |
-| **Observer** | [`Behavioral/Observer`](Behavioral/Observer) | Bir nesnede meydana gelen değişiklikleri abone olan diğer nesnelere otomatik olarak bildirir (Borsa / Fiyat Takip Sistemi). |
-| **State** | [`Behavioral/State`](Behavioral/State) | Bir nesnenin iç durumu değiştiğinde davranışını değiştirmesini sağlar (Doküman Yayınlama İş Akışı: Taslak -> İnceleme -> Yayınlandı). |
-| **Strategy** | [`Behavioral/Strategy`](Behavioral/Strategy) | Bir dizi algoritmayı tanımlayıp kapsülleyerek çalışma zamanında değiştirilebilir olmalarını sağlar (Ödeme Yöntemi Stratejileri). |
-| **Template Method** | [`Behavioral/TemplateMethod`](Behavioral/TemplateMethod) | Bir algoritmanın iskeletini temel sınıfta tanımlayıp bazı adımların alt sınıflarda ezilmesine izin verir (Veri Madenciliği Raporlayıcı). |
-| **Visitor** | [`Behavioral/Visitor`](Behavioral/Visitor) | Nesne yapısını değiştirmeden nesneler üzerinde çalışacak yeni operasyonlar tanımlamayı sağlar (Vergi & Kargo Hesaplama). |
+Facade (Structural/Facade): Karmaşık bir sistemi tek ve basit bir arayüz arkasına gizler (Sipariş süreci).
 
----
+Flyweight (Structural/Flyweight): Ortak veriyi paylaşarak bellek kullanımını azaltır.
 
-## 🚀 Çalıştırma
+Proxy (Structural/Proxy): Asıl nesneye erişimi kontrol eden bir vekil sunar (Gecikmeli yükleme).
 
-Herhangi bir desenin örneğini çalıştırmak için ilgili klasöre gidip terminalde şu komutu çalıştırabilirsiniz:
+3. Davranışsal Desenler (Behavioral)
+Chain of Responsibility (Behavioral/ChainOfResponsibility): İsteği işleyecek nesneler zinciri oluşturur (Onay mekanizması).
 
-```bash
-cd Creational/Singleton
-dotnet run
-```
-veya
-```bash
-dotnet run --project Behavioral/Observer
-```
+Command (Behavioral/Command): İşlemleri nesneye dönüştürüp sıraya alma ve geri alma (Undo) imkanı verir.
+
+Interpreter (Behavioral/Interpreter): Basit bir dil/ifade yorumlayıcı oluşturur (Matematiksel ifadeler).
+
+Iterator (Behavioral/Iterator): Koleksiyon elemanlarını sırayla gezmeyi sağlar.
+
+Mediator (Behavioral/Mediator): Nesneler arası doğrudan bağımlılığı arabulucu ile çözer (Sohbet odası).
+
+Memento (Behavioral/Memento): Nesnenin durumunu kaydedip daha sonra geri yükler (Metin editörü).
+
+Observer (Behavioral/Observer): Durum değiştiğinde abonelere otomatik haber verir (Fiyat takibi).
+
+State (Behavioral/State): Nesnenin durumuna göre davranış değiştirmesini sağlar (İş akışı adımları).
+
+Strategy (Behavioral/Strategy): Çalışma anında değiştirilebilen algoritmalar tanımlar (Ödeme yöntemleri).
+
+Template Method (Behavioral/TemplateMethod): Algoritmanın ana iskeletini koruyup adımlarını özelleştirir.
+
+Visitor (Behavioral/Visitor): Sınıf yapısını değiştirmeden yeni operasyonlar ekler.
